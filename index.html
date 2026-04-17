@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amira Farhan - Machine Learning Engineer</title>
+    <meta name="description" content="Portfolio of Amira Farhan, AI & Machine Learning Engineer based in Cairo, Egypt.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Modern Tech Fonts: Outfit & Inter for premium feel -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress"></div>
+    
+    <!-- AI Particles Background -->
+    <div id="tsparticles"></div>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">AMIRA<span class="logo-accent">.AI</span></a>
+            <ul class="nav-links">
+                <li><a href="#about" data-i18n="nav_about">About</a></li>
+                <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+                <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+                <li><a href="#resume" data-i18n="nav_experience">Experience</a></li>
+                <li>
+                    <button id="theme-toggle" class="lang-toggle-btn">
+                        <i class="fa-solid fa-sun" id="theme-icon"></i>
+                    </button>
+                </li>
+                <li>
+                    <button id="lang-toggle" class="lang-toggle-btn">
+                        <i class="fa-solid fa-globe"></i> <span id="lang-text">AR</span>
+                    </button>
+                </li>
+            </ul>
+            <!-- Mobile Menu Toggle -->
+            <div class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="container hero-content">
+            <div class="hero-text fade-in-stagger">
+                <span class="greeting" data-i18n="hero_greeting">STAFF MACHINE LEARNING ENGINEER & AI EDUCATOR</span>
+                <h1 class="name"><span data-i18n="hero_hi">Hello, I'm</span><br><span class="highlight">Amira Farhan</span></h1>
+                <p class="summary" data-i18n="hero_summary">
+                    I architect scalable AI systems and empower the next generation of data professionals. Specialized in transforming complex data into robust, production-ready machine learning solutions that drive business value.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary" data-i18n="btn_projects">View Projects</a>
+                    <a href="#cta" class="btn btn-outline" data-i18n="btn_hire">Hire Me</a>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper fade-in-stagger">
+                <div class="hero-image-glow"></div>
+                <!-- Premium profile representation -->
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQHkjADUgV67yw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696510256613?e=1776902400&amp;v=beta&amp;t=ADrGQfGlfg80HUb0jT0Mn_7tCx4XYDYJQTgiIry2w_Y"
+                    alt="Profile image" class="hero-image">
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in" data-i18n="about_title">About Me</h2>
+            <div class="about-card glass-card fade-in mt-50">
+                <p data-i18n="about_p1">
+                    As a <strong class="text-glow">Staff Machine Learning Engineer</strong>, I architect and deploy scalable, end-to-end ML systems that drive measurable impact. From robust data pipelines to model serving, I specialize in transforming complex datasets into production-ready AI solutions that solve critical business challenges.
+                </p>
+                <br>
+                <p data-i18n="about_p2">
+                    My technical foundation encompasses advanced deep learning architectures (ANNs, CNNs) and sophisticated approaches to real-world edge cases, such as extreme class imbalance and distributed model optimization. I actively work with modern ML ecosystems including Python, Scikit-learn, TensorFlow, and production pipelines.
+                </p>
+                <br>
+                <p data-i18n="about_p3">
+                    Beyond engineering, I am a dedicated <strong class="text-glow">AI Educator</strong>. I lead high-impact training initiatives, mentoring the next generation of engineers in core machine learning concepts, system design, and industry best practices. I prioritize writing clean, reproducible code and building sustainable ML workflows.
+                </p>
+                
+                <hr class="card-divider">
+
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="icon-circle"><i class="fa-solid fa-envelope"></i></div>
+                        <span>amirafarhan34@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon-circle"><i class="fa-solid fa-location-dot"></i></div>
+                        <span data-i18n="about_location">Cairo, Egypt</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stats" class="section">
+        <div class="container stats-container fade-in">
+            <div class="stat-box glass-card">
+                <h3 class="stat-number"><span class="counter" data-target="30">0</span>+</h3>
+                <p class="stat-label" data-i18n="stat_students">Students Mentored</p>
+            </div>
+            <div class="stat-box glass-card">
+                <h3 class="stat-number"><span class="counter" data-target="5">0</span>+</h3>
+                <p class="stat-label" data-i18n="stat_projects">Enterprise Projects</p>
+            </div>
+            <div class="stat-box glass-card">
+                <h3 class="stat-number"><span class="counter" data-target="100">0</span>%</h3>
+                <p class="stat-label" data-i18n="stat_accuracy">Pipeline Efficiency</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section bg-darker">
+        <div class="container">
+            <h2 class="section-title fade-in" data-i18n="skills_title">Technical Skills</h2>
+            <div class="skills-grid mt-50">
+                <div class="skill-card glass-card fade-in-stagger">
+                    <div class="skill-header">
+                        <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3 data-i18n="skills_cat_lang">Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>Python</span><span>SQL</span><span>R</span><span>C++</span>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card fade-in-stagger">
+                    <div class="skill-header">
+                        <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+                        <h3 data-i18n="skills_cat_ml">Machine & Deep Learning</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>Supervised Learning</span><span>ANN</span><span>CNN</span><span>Feature Engineering</span><span>Model Evaluation</span>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card fade-in-stagger">
+                    <div class="skill-header">
+                        <div class="skill-icon"><i class="fa-solid fa-cubes"></i></div>
+                        <h3 data-i18n="skills_cat_frameworks">Frameworks</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>TensorFlow</span><span>Keras</span><span>Scikit-learn</span><span>Pandas</span><span>NumPy</span>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card fade-in-stagger">
+                    <div class="skill-header">
+                        <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
+                        <h3 data-i18n="skills_cat_ops">MLOps & Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>Git</span><span>Docker</span><span>Pipelines</span><span>AWS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in" data-i18n="projects_title">Featured Architecture</h2>
+
+            <div class="projects-list mt-50">
+                <!-- Project 1 -->
+                <div class="project-row glass-card fade-in" 
+                     data-modal="project1"
+                     data-title="Adverse Drug Reaction (ADR) Reporting"
+                     data-desc="This project simulates pharmacovigilance reports for adverse drug reactions (ADRs), designed for machine learning experiments in drug safety monitoring. The dataset reflects real-world imbalance where severe and fatal cases are rare (~4–5%), making it ideal for handling imbalanced classification problems."
+                     data-tags="Python,Scikit-learn,SMOTE,Feature Engineering"
+                     data-link="https://colab.research.google.com/drive/1wGBOjcuKSWlCJoYUols_tfuydYaKkAMP">
+                    
+                    <div class="project-info">
+                        <h3>Adverse Drug Reaction (ADR)</h3>
+                        <p data-i18n="proj1_desc">A scalable classification system handling extreme data imbalance (~4-5%) for pharmacovigilance reporting.</p>
+                        <ul class="project-highlights">
+                            <li><i class="fa-solid fa-check"></i> Imbalanced Data (SMOTE)</li>
+                            <li><i class="fa-solid fa-check"></i> Precision/Recall Optimization</li>
+                        </ul>
+                        <button class="btn btn-outline small mt-15 open-modal-btn" data-i18n="btn_view_details">View Architecture</button>
+                    </div>
+                    <div class="project-img">
+                        <img src="./images/project1.png" alt="ADR Project" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000'">
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-row reverse glass-card fade-in" 
+                     data-modal="project2"
+                     data-title="Predicting Irrigation Need"
+                     data-desc="This project focuses on predicting irrigation requirements using synthetic environmental data. It leverages modern machine learning techniques to optimize water usage in smart agriculture. The dataset is inspired by Tabular Playground competitions."
+                     data-tags="Python,XGBoost,IoT Analysis,End-to-End Pipeline"
+                     data-link="https://colab.research.google.com/drive/1A59JPCaF8PA0e0i7l9lI_7OV_s9ZZCvi">
+                    
+                    <div class="project-info">
+                        <h3>Smart Agriculture Inference</h3>
+                        <p data-i18n="proj2_desc">Predictive IoT model for optimizing hydration schedules using continuous environmental telemetry streams.</p>
+                        <ul class="project-highlights">
+                            <li><i class="fa-solid fa-check"></i> XGBoost/LightGBM</li>
+                            <li><i class="fa-solid fa-check"></i> Feature Engineering</li>
+                        </ul>
+                        <button class="btn btn-outline small mt-15 open-modal-btn" data-i18n="btn_view_details">View Architecture</button>
+                    </div>
+                    <div class="project-img">
+                        <img src="./images/project2.png" alt="Irrigation Project" onerror="this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1000'">
+                    </div>
+                </div>
+                <!-- Project 3: Blockchain -->
+<div class="project-row glass-card fade-in-up">
+    <div class="project-info">
+        <h3>Blockchain in Agriculture</h3>
+
+        <p>
+            Designed a decentralized supply chain system ensuring transparency and traceability
+            from farm to consumer. Developed smart contracts to automate transactions and
+            integrated data analytics to verify crop quality.
+        </p>
+
+        <p>
+            The system enhances data security and trust in agricultural logistics by leveraging
+            blockchain technology and immutable ledgers.
+        </p>
+
+        <p><strong>Skills & Technologies:</strong></p>
+        <ul style="margin-bottom:20px; color:#828282;">
+            <li>Blockchain Technology</li>
+            <li>Smart Contracts Development</li>
+            <li>Decentralized Applications (DApps)</li>
+            <li>Supply Chain Management Systems</li>
+            <li>Data Security & Encryption</li>
+            <li>Data Analysis & Verification</li>
+            <li>Problem Solving & System Design</li>
+        </ul>
+
+        <a href="#"
+           class="btn btn-outline small">
+           View Project
+        </a>
+    </div>
+
+    <div class="project-img">
+        <img src="./images/project3.png" alt="Blockchain Agriculture Project">
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+    <section id="achievements" class="section">
+    <div class="container">
+
+        <h2 class="section-title fade-in" data-i18n="ach_title">Achievements</h2>
+
+        <div class="achievement-wrapper mt-50 fade-in">
+
+            <!-- Text Side -->
+            <div class="achievement-text fade-in-stagger">
+
+                <div class="achievement-card glass-card">
+                    <h3 data-i18n="ach_card1_title">Machine Learning Projects</h3>
+                    <p data-i18n="ach_card1_desc">Successfully built and deployed multiple ML projects including classification, regression, and real-world prediction systems.</p>
+                </div>
+
+                <div class="achievement-card glass-card">
+                    <h3 data-i18n="ach_card2_title">AI Instructor Experience</h3>
+                    <p data-i18n="ach_card2_desc">Trained 30+ students on Machine Learning and Deep Learning concepts with hands-on projects and practical demos.</p>
+                </div>
+
+                <div class="achievement-card glass-card">
+                    <h3 data-i18n="ach_card3_title">End-to-End ML Pipelines</h3>
+                    <p data-i18n="ach_card3_desc">Developed complete pipelines from data preprocessing to model evaluation and optimization using industry tools.</p>
+                </div>
+
+            </div>
+
+            <!-- Image Side -->
+            <div class="achievement-image fade-in-stagger">
+                <img src="https://via.placeholder.com/500x400.png?text=AI+Achievements"
+                     alt="Achievement Image" class="glass-card" style="padding:0; border:1px solid var(--card-border);">
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<section id="services" class="section bg-darker">
+    <div class="container">
+
+        <h2 class="section-title fade-in" data-i18n="srv_title">Offered Services</h2>
+
+        <div class="services-grid mt-50">
+
+            <div class="service-card glass-card fade-in-stagger">
+                <h3 data-i18n="srv_card1_title">Machine Learning Solutions</h3>
+                <p data-i18n="srv_card1_desc">
+                    Building end-to-end ML models for classification, regression, and prediction problems
+                    with optimized performance and real-world deployment readiness.
+                </p>
+            </div>
+
+            <div class="service-card glass-card fade-in-stagger">
+                <h3 data-i18n="srv_card2_title">Deep Learning Development</h3>
+                <p data-i18n="srv_card2_desc">
+                    Designing and training neural networks (ANN, CNN) for image processing, prediction,
+                    and intelligent automation systems.
+                </p>
+            </div>
+
+            <div class="service-card glass-card fade-in-stagger">
+                <h3 data-i18n="srv_card3_title">Data Analysis & Visualization</h3>
+                <p data-i18n="srv_card3_desc">
+                    Turning raw data into actionable insights using EDA, statistical analysis,
+                    and professional visualizations with Python tools.
+                </p>
+            </div>
+
+            <div class="service-card glass-card fade-in-stagger">
+                <h3 data-i18n="srv_card4_title">AI Training & Mentorship</h3>
+                <p data-i18n="srv_card4_desc">
+                    Teaching Machine Learning & AI concepts with hands-on projects, simplifying complex
+                    topics for students and beginners.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+    <!-- Experience Section -->
+    <section id="resume" class="section bg-darker">
+        <div class="container">
+            <h2 class="section-title fade-in" data-i18n="experience_title">Experience & Leadership</h2>
+            <div class="timeline-container fade-in">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title" data-i18n="exp1_role">Machine Learning Engineer Trainee</h3>
+                            <span class="timeline-date">2026 – Present</span>
+                        </div>
+                        <p class="timeline-company text-glow" data-i18n="exp1_company">MCIT - Digilians Digital Pioneers</p>
+                        <ul class="timeline-list custom-list mt-15">
+                            <li data-i18n="exp1_b1">Designed and built end-to-end ML pipelines.</li>
+                            <li data-i18n="exp1_b2">Developed deep learning models (ANN, CNN).</li>
+                            <li data-i18n="exp1_b3">Improved performance using advanced CV tuning.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title" data-i18n="exp2_role">AI Trainer & ML Instructor</h3>
+                            <span class="timeline-date">2025</span>
+                        </div>
+                        <p class="timeline-company text-glow" data-i18n="exp2_company">International School - Egypt</p>
+                        <ul class="timeline-list custom-list mt-15">
+                            <li data-i18n="exp2_b1">Delivered hands-on sessions using TensorFlow & Keras.</li>
+                            <li data-i18n="exp2_b2">Mentored 30+ students on core AI patterns.</li>
+                            <li data-i18n="exp2_b3">Simplified complex math into interactive demos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conversion Section CTA -->
+    <section id="cta" class="section">
+        <div class="container fade-in">
+            <div class="cta-card glass-card text-center highlight-border">
+                <div class="pulse-ring"></div>
+                <h2 data-i18n="cta_title">Let's Build Something Great Together</h2>
+                <p data-i18n="cta_desc">Looking to elevate your AI capabilities or need expert ML consulting? Let's discuss how we can drive impact for your organization.</p>
+                <div class="cta-actions mt-50">
+                    <a href="mailto:amirafarhan34@gmail.com" class="btn btn-primary" data-i18n="btn_hire">Hire Me</a>
+                    <a href="https://linkedin.com" target="_blank" class="btn btn-outline"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-darker">
+        <div class="container">
+            <p class="copyright">&copy; 2026 Amira Farhan. Build with AI.</p>
+        </div>
+    </footer>
+
+    <!-- Project Modal Viewer Overlay -->
+    <div id="project-modal" class="modal-overlay">
+        <div class="modal-container glass-card">
+            <button class="modal-close" id="modal-close-btn">&times;</button>
+            <div class="modal-content-wrapper">
+                <div class="modal-header">
+                    <h2 id="modal-title">Project Title</h2>
+                    <div class="modal-badges" id="modal-tags">
+                        <!-- badges injected via js -->
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <p id="modal-desc">Project description goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" id="modal-link" target="_blank" class="btn btn-primary"><i class="fa-solid fa-code"></i> <span data-i18n="modal_view_code">View Notebook / Code</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Chatbot UI -->
+    <button id="chatbot-fab" class="chatbot-fab">
+        <i class="fa-solid fa-robot"></i>
+    </button>
+    <div id="chatbot-window" class="chatbot-window glass-card">
+        <div class="chatbot-header">
+            <div class="chatbot-title-area">
+                <h3><i class="fa-solid fa-bolt"></i> <span data-i18n="chat_header">Amira.AI</span></h3>
+                <small data-i18n="chat_status">Simulated Assistant</small>
+            </div>
+            <button id="chatbot-close">&times;</button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <!-- Messages go here -->
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbot-text" placeholder="Ask about my skills..." autocomplete="off">
+            <button id="chatbot-send"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- tsParticles -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
